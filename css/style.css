@@ -27,7 +27,28 @@ body.fh5co-offcanvas {
 .center {
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  
+}
+.responsive {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-right: -10px;
+  text-align: center;
+
+}
+
+@media screen and (max-width: 768px) {
+  img.responsive {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 480px) {
+  img.responsive {
+    width: 100%;
+  }
 }
 
 a {
@@ -110,6 +131,40 @@ figure {
     text-align: center;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .center {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .center {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .new img {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .new img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #new1 img {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 480px) {
+  #new1 img {
+    width: 100%;
+  }
+}
+
 .header-top .fh5co-social a {
   color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
@@ -145,9 +200,15 @@ figure {
   height: 800px;
 }
 @media screen and (max-width: 768px) {
-  .fh5co-cover,
-  .fh5co-hero {
-    height: 700px;
+  img.fh5co-cover,
+  img.fh5co-hero {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fh5co-cover image {
+    width: 49%;
   }
 }
 .fh5co-cover.fh5co-hero-2,
@@ -414,7 +475,7 @@ figure {
 #fh5co-primary-menu > li > .sf-with-ul:after {
   border: none !important;
   font-family: 'icomoon';
-  speak: none;
+  speak-as: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -438,7 +499,7 @@ figure {
 #fh5co-primary-menu > li > ul li > .sf-with-ul:after {
   border: none !important;
   font-family: 'icomoon';
-  speak: none;
+  speak-as: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -726,7 +787,7 @@ figure {
   clear: left;
   position: relative;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   #fh5co-portfolio-list li {
     margin-left: 0;
   }
@@ -1473,5 +1534,3 @@ figure {
   z-index: 9999;
   background: url(../images/hourglass.svg) center no-repeat #222222;
 }
-
-/*# sourceMappingURL=style.css.map */
